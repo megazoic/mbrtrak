@@ -1,0 +1,24 @@
+Acceptance
+	RSpec.describe User, 'record keeping' do
+		it 'records a users profile'
+		it 'updates a users profile'
+		it 'records a payment'
+		it 'updates a payment'
+		
+	end
+	# build Authentication
+		# use a subset of Rodauth capabilities
+	# build Authorization (goal to have roles and rights)
+		# Roles [Admin, Bookkeeper, Editor, Viewer]
+			# no role means you are tracked only (membership, etc)
+		# Rights
+			# create/update/delete User
+				# assign Role to User
+			# create/update/delete Group
+			# create/update/delete Payment
+			# create/update/delete Event
+			# view User, Event, Group
+			# update User, Event, Group (but cannot create/delete)
+		
+Unit
+Integration

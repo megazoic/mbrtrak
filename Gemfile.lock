@@ -1,0 +1,87 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    addressable (2.8.0)
+      public_suffix (>= 2.0.2, < 5.0)
+    bcrypt (3.1.16)
+    coderay (1.1.3)
+    diff-lcs (1.5.0)
+    domain_name (0.5.20190701)
+      unf (>= 0.0.5, < 1.0.0)
+    dry-inflector (0.2.1)
+    erubi (1.10.0)
+    http (2.2.2)
+      addressable (~> 2.3)
+      http-cookie (~> 1.0)
+      http-form_data (~> 1.0.1)
+      http_parser.rb (~> 0.6.0)
+    http-cookie (1.0.4)
+      domain_name (~> 0.5)
+    http-form_data (1.0.3)
+    http_parser.rb (0.6.0)
+    lucid_http (0.11.1)
+      http (~> 2.1)
+    nio4r (2.5.8)
+    pg (1.3.2)
+    public_suffix (4.0.6)
+    puma (5.6.2)
+      nio4r (~> 2.0)
+    rack (2.2.3)
+    rack-test (1.1.0)
+      rack (>= 1.0, < 3)
+    rack-unreloader (1.8.0)
+    rake (13.0.6)
+    roda (3.53.0)
+      rack
+    rspec (3.11.0)
+      rspec-core (~> 3.11.0)
+      rspec-expectations (~> 3.11.0)
+      rspec-mocks (~> 3.11.0)
+    rspec-core (3.11.0)
+      rspec-support (~> 3.11.0)
+    rspec-expectations (3.11.0)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (~> 3.11.0)
+    rspec-its (1.2.0)
+      rspec-core (>= 3.0.0)
+      rspec-expectations (>= 3.0.0)
+    rspec-mocks (3.11.0)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (~> 3.11.0)
+    rspec-roda (0.2.2)
+      dry-inflector
+      rack-test (~> 1.0)
+      roda
+      rspec (~> 3.7)
+      rspec-its (~> 1.2.0)
+    rspec-support (3.11.0)
+    rspec_sequel_matchers (0.5.0)
+      sequel (>= 3.8.0)
+    sequel (5.53.0)
+    tilt (2.0.10)
+    unf (0.1.4)
+      unf_ext
+    unf_ext (0.0.8)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  bcrypt
+  coderay
+  erubi
+  lucid_http
+  pg
+  puma
+  rack-test
+  rack-unreloader
+  rake
+  roda
+  rspec
+  rspec-roda
+  rspec_sequel_matchers
+  sequel
+  tilt
+
+BUNDLED WITH
+   2.1.4
