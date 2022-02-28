@@ -15,9 +15,20 @@ module MbrTrak
     puts "made new api"
     route do |r|
       puts "in route"
-      r.post "users" do
-        puts "in post"
-        "hello"
+      r.on "users" do
+        puts "in users"
+        "users"
+        r.is Integer do |id|
+          r.get do
+            puts "in users/yr"
+            JSON.generate([])
+          end
+        end
+        r.post do
+          response.status = 200
+          response['Content-Type'] = 'application/json'
+          response.write JSON.generate('user_id' => 42)
+        end
       end
     end
   end
